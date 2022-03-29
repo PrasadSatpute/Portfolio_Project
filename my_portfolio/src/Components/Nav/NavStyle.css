@@ -1,3 +1,4 @@
+/* #1BFF00 */
 .Navbar{
     margin: auto;
     height: 100px;
@@ -12,6 +13,7 @@
     z-index: 999;
     letter-spacing: 1px;
     transition: 1s;
+    background: transparent;
 }
 .Navbar.black{
     background: #000;
@@ -98,7 +100,7 @@ ul li h3{
         position: fixed;
         top: 0;
         width: 100%;
-        height: 100vh;
+        height: 50px;
         /* background-color: aliceblue; */
         font-family: 'Poppins', sans-serif;
         display: flex;
@@ -110,7 +112,7 @@ ul li h3{
         /* background-color: #d3bf65; */
     }
     .Navbar .menu-icon{
-        position: relative;
+        position: absolute;
         /* background-color: rgb(211, 78, 78); */
     }
     .Navbarblack{
@@ -128,16 +130,18 @@ ul li h3{
         transition: 1s;
     }
     .menu-item ul.showing{
+        position: fixed;
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         display: flex;
+        flex-direction: column;
         align-content: stretch;
         background-color: #000;
-        transition: 1s;
+        transition: all 1s ease-out;
     }
-    .menu-item ul li{
+    .menu-item ul.showing.open{
         /* background-color: rgb(27, 44, 199); */
     }
     
@@ -181,13 +185,13 @@ ul li h3{
 
 }
 
-@media(max-width: 400px){
+@media(max-width: 390px){
     .Navbar{
         margin: auto;
         position: fixed;
         top: 0;
         width: 100%;
-        height: 100vh;
+        height: 50px;
         /* background-color: aliceblue; */
         font-family: 'Poppins', sans-serif;
         display: flex;
@@ -199,27 +203,58 @@ ul li h3{
         /* background-color: #d3bf65; */
     }
     .Navbar .menu-icon{
-        position: relative;
+        position: fixed;
         /* background-color: rgb(211, 78, 78); */
     }
-    .menu-item .showing{
+    .menu-item{
         margin: 0;
         padding: 0;
         height: 100%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        transition: 1s;
         /* background-color: #000; */
     }
+    .menu-item ul{
+        display: none;
+        transition: 1s;
+    }
+    .menu-item ul.showing{
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        background-color: #000;
+        transition: 1s;
+        transition: all 1s ease-out;
+    }
+    .menu-item ul li{
+        /* background-color: rgb(27, 44, 199); */
+    }
     
-    .menu-icon img{
+    .cool-link::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #1BFF00;
+        transition: width .3s;
+    }
+    
+    .cool-link:hover:after{
+        width: 100%;
+        transition: width .5s;
+    }
+
+    img{
         height: 40px;
         background: transparent;
         cursor: pointer;
     }
     ul li img{
-        height: 35px;
+        height: 40px;
         background: transparent;
         cursor: pointer;
         /* #1BFF00 */

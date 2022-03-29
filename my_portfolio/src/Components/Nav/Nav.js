@@ -7,7 +7,7 @@ import ContactICON from '../IMG/contact.png'
 import MenuICON from '../IMG/menu.png'
 
 
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navbar() {
   const span = document.querySelector("toggleMenu");
@@ -18,13 +18,27 @@ const toggleNav = () => {
   console.log("Click Nav")
   toggleClass.className = "toggel-menu-item";
   }
+
+  const [navbar,setNavbar] = useState(false)
+
+  const changeBackgraoundNav = () => {
+    if(window.scrollY >= 80){
+      setNavbar(true)
+    }
+    else{
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener('scroll',changeBackgraoundNav);
+
   return (
-    <nav className="Navbar">
+    <nav className={navbar ? 'Navbar black' : 'Navbar'}>
       <div className='menu-icon'>
-        <img className='toggleMenu' onClick={toggleNav} src={MenuICON}></img>
+        <img className='toggleMenu' src={MenuICON}></img>
       </div>
       <div className='menu-item'>
-        <ul>
+        <ul className="nav-links">
             <li><a href='#Home' className='links cool-link'><img src={HomeICON}></img><h3>HOME</h3></a></li>
             <li><a href='#Project' className='links cool-link'><img src={ProfileICON}></img><h3>ABOUT</h3></a></li>
             <li><a href='#Project' className='links cool-link'><img src={EducationICON}></img><h3>EDUCATION</h3></a></li>
