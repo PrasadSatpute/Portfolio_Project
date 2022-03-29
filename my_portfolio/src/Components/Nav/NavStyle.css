@@ -2,20 +2,55 @@
     margin: auto;
     height: 100px;
     width: 100%;
+    position: fixed;
+    top: 0;
     /* background-color: aliceblue; */
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: right;
     align-items: center;
+    z-index: 999;
+    letter-spacing: 1px;
+    transition: 1s;
 }
-ul{
+.Navbar.black{
+    background: #000;
+}
+.menu-item{
     float: right;
     width: 50%;
+}
+.menu-item ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: space-around;
+}
+ul li{
+    display: inline-block;
+}
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1BFF00;
+    transition: width .3s;
+}
+
+.cool-link:hover:after{
+    width: 100%;
+    transition: width .5s;
+}
+.menu-icon{
+    display: none;
+}
+img{
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
 }
 ul li img{
     height: 40px;
@@ -27,5 +62,179 @@ ul li h3{
     color: white;
     background: transparent;
     cursor: pointer;
-    text-shadow: 0 0 50px #0f0;
+    /* text-shadow: 0 0 50px #0f0; */
+}
+
+
+
+
+@media(max-width: 1100px){
+    .Navbar{
+        margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        /* background-color: aliceblue; */
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content:space-around;
+        flex-direction: column;
+        z-index: 999;
+        letter-spacing: 1px;
+        transition: 1s;
+        /* background-color: #d3bf65; */
+    }
+    .menu-item{
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width: 970px) {
+    .Navbar{
+        margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        /* background-color: aliceblue; */
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        z-index: 999;
+        letter-spacing: 1px;
+        transition: 1s;
+        /* background-color: #d3bf65; */
+    }
+    .Navbar .menu-icon{
+        position: relative;
+        /* background-color: rgb(211, 78, 78); */
+    }
+    .Navbarblack{
+        background: aliceblue;
+    }
+    .menu-item{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        /* background-color: #000; */
+    }
+    .menu-item ul{
+        display: none;
+        transition: 1s;
+    }
+    .menu-item ul.showing{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-content: stretch;
+        background-color: #000;
+        transition: 1s;
+    }
+    .menu-item ul li{
+        /* background-color: rgb(27, 44, 199); */
+    }
+    
+    .cool-link::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #1BFF00;
+        transition: width .3s;
+    }
+    
+    .cool-link:hover:after{
+        width: 100%;
+        transition: width .5s;
+    }
+
+    img{
+        height: 40px;
+        background: transparent;
+        cursor: pointer;
+    }
+    ul li img{
+        height: 40px;
+        background: transparent;
+        cursor: pointer;
+        /* #1BFF00 */
+    }
+    ul li h3{
+        color: white;
+        background: transparent;
+        cursor: pointer;
+        /* text-shadow: 0 0 50px #0f0; */
+    }
+    .menu-icon {
+        justify-content: center;
+        align-items: center;
+          display: block;
+          cursor: pointer;
+    }
+
+}
+
+@media(max-width: 400px){
+    .Navbar{
+        margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        /* background-color: aliceblue; */
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        z-index: 999;
+        letter-spacing: 1px;
+        transition: 1s;
+        /* background-color: #d3bf65; */
+    }
+    .Navbar .menu-icon{
+        position: relative;
+        /* background-color: rgb(211, 78, 78); */
+    }
+    .menu-item .showing{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+        /* background-color: #000; */
+    }
+    
+    .menu-icon img{
+        height: 40px;
+        background: transparent;
+        cursor: pointer;
+    }
+    ul li img{
+        height: 35px;
+        background: transparent;
+        cursor: pointer;
+        /* #1BFF00 */
+    }
+    ul li h3{
+        color: white;
+        background: transparent;
+        cursor: pointer;
+        /* text-shadow: 0 0 50px #0f0; */
+    }
+    .menu-icon {
+        justify-content: center;
+        align-items: center;
+          display: block;
+          cursor: pointer;
+          transition: 1s;
+    }
 }
