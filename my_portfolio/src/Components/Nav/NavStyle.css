@@ -1,0 +1,31 @@
+.Navbar{
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    /* background-color: aliceblue; */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+ul{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+ul li img{
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    /* #1BFF00 */
+}
+ul li h3{
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    text-shadow: 0 0 50px #0f0;
+}
