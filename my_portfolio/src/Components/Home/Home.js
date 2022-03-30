@@ -9,6 +9,7 @@ import facebook from '../IMG/Social/f.png'
 import instagram from '../IMG/Social/i.png'
 import linkedin from '../IMG/Social/l.png'
 import github from '../IMG/Social/g.png'
+import twiter from '../IMG/Social/t.png'
 
 function Home() {
   return (
@@ -49,11 +50,12 @@ function Home() {
         <p>Whether you want to get in touch, or talk about a project collaboration.</p>
         <b>Feel free to connect with me</b>
         <ul>
-          <li className='socialIcon'><a><img src={whatsapp}></img></a></li>
-          <li className='socialIcon'><a><img src={instagram}></img></a></li>
-          <li className='socialIcon'><a><img className='linkedinIcon' src={linkedin}></img></a></li>
-          <li className='socialIcon'><a><img src={github}></img></a></li>
-          <li className='socialIcon'><a><img src={facebook}></img></a></li>
+          <li className='socialIcon'><a href='https://ultramsg.com/m/3JRYw5z'><img src={whatsapp}></img></a></li>
+          <li className='socialIcon'><a href='https://instagram.com/prasad.bme/'><img src={instagram}></img></a></li>
+          <li className='socialIcon'><a href='https://www.linkedin.com/in/prasad-satpute-7682b0148/'><img className='linkedinIcon' src={linkedin}></img></a></li>
+          <li className='socialIcon'><a href='https://github.com/PrasadSatpute'><img src={github}></img></a></li>
+          <li className='socialIcon'><a href='https://twitter.com/PRASADSATPUTE18'><img src={twiter}></img></a></li>
+          <li className='socialIcon'><a href='#'><img src={facebook}></img></a></li>
         </ul>
       </div>
     </div>

@@ -19,6 +19,7 @@ const toggleNav = () => {
   toggleClass.className = "toggel-menu-item";
   }
 
+
   const [navbar,setNavbar] = useState(false)
 
   const changeBackgraoundNav = () => {
@@ -40,10 +41,10 @@ const toggleNav = () => {
       <div className='menu-item'>
         <ul className="nav-links">
             <li><a href='#Home' className='links cool-link'><img src={HomeICON}></img><h3>HOME</h3></a></li>
-            <li><a href='#Project' className='links cool-link'><img src={ProfileICON}></img><h3>ABOUT</h3></a></li>
-            <li><a href='#Project' className='links cool-link'><img src={EducationICON}></img><h3>EDUCATION</h3></a></li>
-            <li><a href='#Project' className='links cool-link'><img src={ResumeICON}></img><h3>RESUME</h3></a></li>
-            <li><a href='#Project' className='links cool-link'><img src={ContactICON}></img><h3>CONTACT</h3></a></li>
+            <li><a href='#About' className='links cool-link'><img src={ProfileICON}></img><h3>ABOUT</h3></a></li>
+            <li><a href='#Education' className='links cool-link'><img src={EducationICON}></img><h3>EDUCATION</h3></a></li>
+            <li><a href='#Resume' className='links cool-link'><img src={ResumeICON}></img><h3>RESUME</h3></a></li>
+            <li><a href='#Contact' className='links cool-link'><img src={ContactICON}></img><h3>CONTACT</h3></a></li>
         </ul>
       </div>
     </nav>
