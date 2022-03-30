@@ -1,5 +1,5 @@
 .HomePage{
-    height: 70em;
+    height: 68em;
     width: 100%;
     position: relative;
     color: white;
@@ -40,9 +40,13 @@
     background-size: cover;
 }
 .HomePage .aboutMeBox .MyInfoDiv{
-     height: 50%;
-   width: 100%;
+    height: 50%;
+    width: 100%;
+    padding-right: 10%;
     /* background-color: rgb(70, 70, 70); */
+}
+.HomePage .aboutMeBox .MyInfoDiv .aboutDescription{
+    text-justify: inter-word;
 }
 .HomePage .aboutMeBox .MyInfoDiv .iName{
     color: #1BFF00;
@@ -56,5 +60,239 @@
 .socialLinkBox{
     height: 50%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
     /* background-color: rgb(73, 171, 201); */
+}
+.socialLinkBox ul{
+    /* background-color: black; */
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialLinkBox ul .socialIcon{
+    /* background-color: azure; */
+    height: 30%;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialLinkBox ul .socialIcon img{
+    height: 30%;
+    width: 30%;
+}
+.socialLinkBox ul .socialIcon img:hover{
+    animation: mymove 2s;
+}
+@keyframes mymove {
+    50% {transform: rotate(360deg);}
+  }
+.cool-line::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1BFF00;
+    transition: width .3s;
+}
+
+.cool-line:hover:after{
+    width: 100%;
+    transition: width .5s;
+}
+
+/* ----------------------------------TAB VIEW--------------------- */
+@media(max-width: 1100px){
+    .socialLinkBox ul{
+        /* background-color: black; */
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .socialLinkBox ul .socialIcon{
+        /* background-color: azure; */
+        height: 30%;
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .socialLinkBox ul .socialIcon img{
+        height: 30%;
+        width: 30%;
+    }
+}
+
+
+@media(max-width: 700px){
+    .HomePage{
+        height: auto;
+        width: 100%;
+        position: relative;
+        color: white;
+        margin-top: auto;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+    .HomePage .aboutMeBox{
+        height: 50%;
+        width: 100%;
+        /* background-color: rgb(33, 74, 110); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .HomePage .aboutMeBox .MyImgDiv{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        /* background-color: rgb(30, 187, 161); */
+    }
+    .HomePage .aboutMeBox .MyImgDiv .MyIMG{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        /* border:  2px solid #1BFF00; */
+        /* box-shadow: 0 0 50px #1BFF00; */
+        background-image: url(../IMG/MyImg.png);
+        background-size: cover;
+    }
+    .HomePage .aboutMeBox .MyInfoDiv{
+        height: 50%;
+        width: 100%;padding: 0;
+        /* background-color: rgb(70, 70, 70); */
+    }
+}
+
+/* ----------------------------------MOBILE VIEW--------------------- */
+
+@media(max-width: 400px){
+    .HomePage{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        color: white;
+        margin-top: auto;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+    }
+    .HomePage .aboutMeBox{
+        height: 100%;
+        width: 100%;
+        /* background-color: rgb(33, 74, 110); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .HomePage .aboutMeBox .MyImgDiv{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        /* background-color: rgb(30, 187, 161); */
+    }
+    .HomePage .aboutMeBox .MyImgDiv .MyIMG{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        /* border:  2px solid #1BFF00; */
+        /* box-shadow: 0 0 50px #1BFF00; */
+        background-image: url(../IMG/MyImg.png);
+        background-size: cover;
+    }
+    .HomePage .aboutMeBox .MyInfoDiv{
+        height: 100%;
+        width: 100%;padding: 0;
+        /* background-color: rgb(70, 70, 70); */
+    }
+    .HomePage .aboutMeBox .MyInfoDiv .aboutDescription{
+        text-justify: inter-word;
+    }
+    .HomePage .aboutMeBox .MyInfoDiv .iName{
+        color: #1BFF00;
+    }
+    .HomePage .aboutMeBox .MyInfoDiv .nameHover{
+        cursor: pointer;
+    }
+    .HomePage .aboutMeBox .MyInfoDiv .nameHover:hover{
+        color: #1BFF00;
+    }
+    .socialLinkBox{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        /* background-color: rgb(73, 171, 201); */
+    }
+    .socialLinkBox ul{
+        /* background-color: black; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .socialLinkBox ul .socialIcon{
+        /* background-color: azure; */
+        height: 50%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .socialLinkBox ul .socialIcon img{
+        height: 50%;
+        width: 50%;
+    }
+    .socialLinkBox ul .socialIcon img:hover{
+        animation: mymove 2s;
+    }
+    @keyframes mymove {
+        50% {transform: rotate(360deg);}
+      }
+    .cool-line::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #1BFF00;
+        transition: width .3s;
+    }
+    
+    .cool-line:hover:after{
+        width: 100%;
+        transition: width .5s;
+    }
 }

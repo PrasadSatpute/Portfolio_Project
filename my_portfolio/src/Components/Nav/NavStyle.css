@@ -115,8 +115,8 @@ ul li h3{
         position: absolute;
         /* background-color: rgb(211, 78, 78); */
     }
-    .Navbarblack{
-        background: aliceblue;
+    .Navbar.black{
+        background: rgb(7, 7, 7);
     }
     .menu-item{
         margin: 0;
