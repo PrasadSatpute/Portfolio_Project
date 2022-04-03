@@ -1,7 +1,66 @@
 .SkillsPage{
-    height: 100em;
+    height: auto;
     width: 100%;
+    padding: 5%;
     position: relative;
-    background-color: rgb(125, 123, 238);
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(125, 123, 238); */
     color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.ratingSkills{
+    height: 100%;
+    width: 45%;
+    /* background-color: blue; */
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
+    padding-right: 5px;
+}
+.ratingSkills .headingSkillsLeft{
+    text-align: center;
+}
+.ratingSkills .skillsDetails{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.ratingSkills .rowSkills{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+}
+.ratingSkills .rowSkills .nameSkills{
+    width: 30%;
+}
+.ratingSkills .rowSkills .levelSkills{
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+}
+.ratingSkills .rowSkills .levelSkills img{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+.toolsDetails{
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    border-radius: 10px;
 }
