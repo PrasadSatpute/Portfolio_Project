@@ -1,4 +1,4 @@
-.EducationPage{
+.CertificationPage{
     height: auto;
     width: 100%;
     padding-top: 100px;
@@ -12,33 +12,35 @@
     align-content: center;
     justify-content: space-between;
 }
-.EducationPage .EducationBox{
+.CertificationPage .CertificationBox{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.EducationPage .EducationBox .EduTitle{
+.CertificationPage .CertificationBox .CertiTitle{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.EducationPage .EducationBox .EduTitle h1{
+.CertificationPage .CertificationBox .CertiTitle h1{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.EducationPage .EducationBox .EduDetail{
+.CertificationPage .CertificationBox .CertiDetail{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.EducationPage .EducationBox .EduDetail .EduDetailBox{
+.CertificationPage .CertificationBox .CertiDetail .CertiDetailBox{
     width: 20%;
+    margin: 10px 10px;
     height: auto;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,15 +50,25 @@
     -moz-box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
 }
+.CertificationPage .CertificationBox .CertiDetail .CertiDetailBox a{
+    color: #1BFF00;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    opacity: 5px;
+    -webkit-box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.75);
+}
 
 @media(max-width: 1000px){
-    .EducationPage .EducationBox .EduDetail{
+    .CertificationPage .CertificationBox .CertiDetail{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .EducationPage .EducationBox .EduDetail .EduDetailBox{
+    .CertificationPage .CertificationBox .CertiDetail .CertiDetailBox{
         width: 50%;
         margin: 20px;
         height: auto;
