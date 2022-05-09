@@ -28,8 +28,8 @@ function Education() {
             <p>2011</p>
           </div>
           <div className='EduDetailBox'>
-            <h2>Graduation</h2>
-            <h2>(B.E.)</h2>
+            <h2>SSC</h2>
+            <h2>(10th)</h2>
             <p>Navayug Vidhyalay</p>
             <p>Nagpur,Maharashtra</p>
             <p>2009</p>
